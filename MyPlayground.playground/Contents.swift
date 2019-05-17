@@ -153,9 +153,10 @@ struct Pokemon: Decodable{
     //}
 }
 
-//never force unwrap in an actual project (!)
+//never force unwrap in an actual project (!)d
 let url = Bundle.main.url(forResource: "PokemonExample",withExtension: "json")!
 let data = try! Data(contentsOf: url)
+
 /*
 let jsonObject = try! JSONSerialization.jsonObject(with: data, options: [])
 let jsonDictionary = jsonObject as! [String: Any]
